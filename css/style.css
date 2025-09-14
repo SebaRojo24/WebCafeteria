@@ -178,3 +178,9 @@ footer {
 @media (min-width: 980px) {
   .menu-grid { grid-template-columns: repeat(3, 1fr); }
 }
+.blog-img {
+  width: 250px;        /* tamaño fijo para todas las imágenes del blog */
+  margin: 5px;         /* espacio entre ellas */
+  border-radius: 20px; /* bordes redondeados */
+  vertical-align: top; /* evita que se alineen raro */
+}
