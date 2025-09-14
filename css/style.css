@@ -69,3 +69,8 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
+.blog-img {
+  margin: 5px;
+  border-radius: 20px;
+  vertical-align: top;
+}
