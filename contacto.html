@@ -1,33 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Contacto de la cafeteria</title>
+  <title>Contacto - Cafetería Santa Clara</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<div id="Container">
-  <header>
-    <img src="logo/Captura de pantalla 2025-09-02 092713.png" alt="logo" width="200">
 
-    <link rel="stylesheet" href="css/contacto.css">
-    <nav>
+<div class="contenedor1">
+  <header>
+    <h1>Contacto</h1>
+    <nav aria-label="Principal">
       <ul>
         <li><a href="Index.html">Inicio</a></li>
         <li><a href="menu.html">Menú</a></li>
-        <li><a href="Contacto.html">Contacto</a></li>
-        <li><a href="Nosotros.html">Quienes Somos</a></li>
+        <li><a href="Contacto.html" aria-current="page">Contacto</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
         <li><a href="Blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
-
-  <footer>
-    <p>Derechos Reservados &copy; 2024</p>
-  </footer
-
 </div>
+
+<!-- Banner (opcional, puedes quitarlo si no lo usarás) -->
+<section class="hero" aria-label="Imagen destacada">
+  <img src="img/cafeteria_animada2.png" alt="Interior de la cafetería con una taza de café">
+  <p class="hero-tag">Estamos para escucharte ☕</p>
+</section>
+
+<main class="contenedor2">
+
+  <!-- CTA simple -->
+  <p><a class="btn" href="menu.html">Ver Menú</a></p>
+
+  <!-- Formulario de contacto -->
+  <section class="contacto" aria-labelledby="titulo-contacto">
+    <h2 id="titulo-contacto">✉️  Envíanos un mensaje</h2>
+
+    <form class="form" action="#" method="post" novalidate>
+      <div class="form-grid">
+        <div class="form-control">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </div>
+
+        <div class="form-control">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com">
+        </div>
+
+        <div class="form-control">
+          <label for="telefono">Teléfono (opcional)</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" pattern="[\d+()\s-]{6,}">
+        </div>
+
+        <div class="form-control">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" required placeholder="Motivo del mensaje">
+        </div>
+
+        <div class="form-control form-full">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos en qué te ayudamos..."></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Información de contacto -->
+  <section class="info-contacto" aria-labelledby="titulo-info">
+    <h2 id="titulo-info">📍  Información</h2>
+    <ul class="lista-contacto">
+      <li>📞 Teléfono: <strong>+56 9 1234 5678</strong></li>
+      <li>✉️ Instagram: <strong>@cafeteria_santacarla</strong></li>
+      <li>⏰ Horarios: <strong>Lun 8:00 a 15 hrs // Mar a Vier 8:00 a 21 hrs // Sáb 9 a 21 Dom 9 a 14 hrs</strong></li>
+      <li>📌 Dirección: <strong>Pedro Fontova 7855, Huechuraba</strong></li>
+    </ul>
+    <!-- Si más adelante quieres mapa, aquí va el iframe -->
+  </section>
+
+</main>
+
+<footer>
+  <p>Derechos Reservados &copy; 2025</p>
+</footer>
 
 </body>
 </html>
