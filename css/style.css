@@ -184,3 +184,60 @@ footer {
   border-radius: 20px; /* bordes redondeados */
   vertical-align: top; /* evita que se alineen raro */
 }
+/* Sección tipo Coffee Shop */
+.hero-seccion {
+  display: flex;
+  justify-content: flex-start;   /* taza pegada a la izquierda */
+  align-items: center;
+  gap: 80px;                     /* espacio entre taza y logo */
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+/* Imagen taza */
+.cafe-img {
+  max-width: 350px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Logo de letras */
+.logo-img {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+/* Texto descriptivo */
+.descripcion {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+/* Tamaños de café */
+.sizes {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  color: #3f7fa6; /* azul de tu barra */
+}
+.sizes span {
+  background: #5e91b3;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+.sizes span:hover {
+  background: #41708d;
+}
+.cafe-img {
+  max-width: 350px;
+  border-radius: 0;   /* sin borde redondeado */
+  box-shadow: none;   /* sin sombra */
+  background: none;   /* evita fondos extra */
+}
