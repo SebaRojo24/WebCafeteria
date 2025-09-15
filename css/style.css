@@ -220,7 +220,7 @@ footer {
 /* Tamaños de café */
 .sizes {
   display: flex;
-  gap: 20px;
+  gap: 20px;//
   font-weight: bold;
   color: #3f7fa6; /* azul de tu barra */
 }
