@@ -3,39 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Contacto de la cafeteria</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<div id="Container">
-  <header>
-    <img src="logo/Captura de pantalla 2025-09-02 092713.png" alt="logo" width="200">
+<script src="js/formulario.js"></script>
 
-    <link rel="stylesheet" href="css/contacto.css">
+<body>
+<div class="contenedor1">
+  <header>
+    <img src="img/logo.png" alt="logo" width="150">
+    <h1>Contacto</h1>
     <nav>
       <ul>
         <li><a href="Index.html">Inicio</a></li>
         <li><a href="menu.html">Menú</a></li>
         <li><a href="Contacto.html">Contacto</a></li>
-        <li><a href="Nosotros.html">Quienes Somos</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
         <li><a href="Blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
-
-  <footer>
-    <h3>Ubicación</h3>
-    <p>Pedro Fontova 7855, Huechuraba</p>
-
-    <h3>Horario</h3>
-    <p>Lun 8:00 a 15:00 | Mar-Vie 8:00 a 21:00 | Sáb 9:00 a 21:00 | Dom 9:00 a 14:00</p>
-
-    <h3>Redes Sociales</h3>
-    <p>Facebook</p>
-    <p>Derechos Reservados &copy; 2024</p>
-  </footer>
-
 </div>
+
+<!-- Imagen destacada -->
+<section class="hero" aria-label="Imagen destacada del blog">
+  <img src="img/cafeteria_animada2.png" alt="Interior de la cafetería con café y postres">
+  <p class="hero-tag">Historias, novedades y sabores que inspiran ☕🍰</p>
+</section>
+
+<main class="contenedor2">
+  <section class="formulario-contacto">
+    <h2>Formulario de Contacto</h2>
+    <form action="procesar_formulario.php" method="post">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9+ ]+" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <h3>Ubicación</h3>
+  <p>Pedro Fontova 7855, Huechuraba</p>
+
+  <h3>Horario</h3>
+  <p>Lun 8:00 a 15:00 | Mar-Vie 8:00 a 21:00 | Sáb 9:00 a 21:00 | Dom 9:00 a 14:00</p>
+
+  <h3>Redes Sociales</h3>
+  <p>Facebook</p>
+  <p>Derechos Reservados &copy; 2024</p>
+</footer>
+
+
 
 </body>
 </html>
