@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafetería Santa Carla</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - Cafetería Santa Carla</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<!-- Encabezado con logo y navegación -->
-<header class="contenedor-nav">
-  <img src="img/logo.png" alt="Logo Cafetería" width="150">
-  <nav class="menu">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="menu.html">Menú</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </nav>
-</header>
-<!-- Sección principal con café y logo -->
-<section class="hero-seccion">
-  <!-- Café a la izquierda -->
-  <div class="hero-left">
-    <img src="img/index_img.png" alt="Taza de café" class="cafe-img">
-  </div>
 
-  <!-- Logo + texto a la derecha -->
-  <div class="hero-right">
-    <img src="img/titulo.png" alt="Logo Cafetería Santa Carla" class="logo-img">
-    <p class="descripcion">
-      El mejor café de la ciudad, preparado con pasión desde 2021.
-      Vive la experiencia Santa Carla.
-    </p>
-    <div class="sizes">
-      <span><a href="menu.html">☕ Pequeño</a></span>
-      <span><a href="menu.html">☕ Mediano</a></span>
-      <span><a href="menu.html">☕ Grande</a></span>
-    </div>
-  </div>
+<!-- Encabezado unificado (mismo de nosotros.html) -->
+<div class="contenedor1">
+  <header>
+    <img src="img/logo.png" alt="logo" width="150" />
+    <h1>Inicio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<!-- Banner destacado (mismo patrón de nosotros.html) -->
+<section class="hero" aria-label="Imagen destacada">
+  <!-- Usa la misma imagen del banner del 'nosotros' para mantener estética global -->
+  <img src="img/cafeteria_animada2.png" alt="Interior de la cafetería con café y postres" />
+  <p class="hero-tag">Café de especialidad, ambiente acogedor y buenas historias ☕🍰</p>
 </section>
+
+<!-- Contenido principal con la misma tarjeta blanca (contenedor2) -->
+<main class="contenedor2">
+
+  <h2>☕ Bienvenid@ a Santa Carla</h2>
+  <p>
+    El mejor café de la ciudad, preparado con pasión desde 2021.
+    Vive la experiencia <strong>Santa Carla</strong>: buena música, pastelería fresca y un servicio cercano.
+  </p>
+
+  <p style="margin-top:12px;">
+    <a class="btn" href="menu.html">Ver nuestro Menú</a>
+  </p>
+
+  <!-- Sección tipo Coffee Shop (mantengo tu layout original pero dentro del main) -->
+  <section class="hero-seccion" aria-label="Destacados">
+    <!-- Taza a la izquierda -->
+    <div class="hero-left">
+      <img src="img/index_img.png" alt="Taza de café" class="cafe-img" />
+    </div>
+
+    <!-- Logo + texto a la derecha -->
+    <div class="hero-right">
+      <img src="img/titulo.png" alt="Logo Cafetería Santa Carla" class="logo-img" />
+      <p class="descripcion">
+        Granos seleccionados, tostado perfecto y baristas que aman lo que hacen.
+        Pide tu favorito y acompáñalo con nuestros pasteles del día.
+      </p>
+
+      <!-- Reemplazo los spans + <a> por botones .btn para heredar estilo y colores -->
+      <div class="sizes" style="gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="menu.html">☕ Pequeño</a>
+        <a class="btn" href="menu.html">☕ Mediano</a>
+        <a class="btn" href="menu.html">☕ Grande</a>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer>
   <h3>Ubicación</h3>
@@ -51,9 +80,8 @@
 
   <h3>Redes Sociales</h3>
   <p>Facebook</p>
-  <p>Derechos Reservados &copy; 2024</p>
+  <p>Derechos Reservados &copy; 2025</p>
 </footer>
-
 
 </body>
 </html>
